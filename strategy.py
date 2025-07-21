@@ -1,14 +1,15 @@
 import pandas as pd
-from .data import get_data
 from typing import Literal
 
-
 def strategy(data: pd.DataFrame) -> Literal["BUY", "SELL", None]:
-  # TODO: You must implement your strategy here
-  # The strategy should return "BUY" if you want to buy,
-  # "SELL" if you want to sell, or None if you don't want to do anything
-  
-  # Strategy 
-  # BUY if SMA_5 crosses above SMA_20
-  # SELL if EMA_8 crosses below EMA_18
-  pass
+    """Trading strategy implementation"""
+    # TODO: Implement a simple moving average crossover strategy
+    # Rules:
+    # - BUY when 5-day SMA crosses above 20-day SMA
+    # - SELL when 8-day EMA crosses below 18-day EMA
+    #
+    # Hint: Think about:
+    # - What happens at the start of your data?
+    # - How to handle price gaps?
+    # - What about low volume days?
+    return None
